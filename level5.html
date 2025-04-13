@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Уровень 5 — Телефон</title>
+  <style>
+    body {
+      background: #f0f0f0;
+      font-family: sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+    img {
+      width: 300px;
+      margin: 20px;
+      border-radius: 10px;
+      animation: fadeIn 1s ease;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      background: #ff9900;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #cc7a00;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>🛠 Уровень 5: Телефон</h1>
+  <img src="../assets/phone.png" alt="Телефон" />
+  <p>🔧 Вставь сим-карту</p>
+  <p>🪛 Закрой корпус</p>
+  <p>✅ Включи телефон</p>
+  <button onclick="window.location.href='../index.html'">Завершить</button>
+</body>
+</html>
