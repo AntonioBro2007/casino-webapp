@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  background: #1b1b1b;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  text-align: center;
+}
+.slot {
+  font-size: 2.5rem;
+  margin: 20px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #ffc107;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background: #ff9800;
+}
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
