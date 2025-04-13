@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎰 Казино Deluxe</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🎰 Казино Deluxe</h1>
+    <div id="profile">Баланс: <span id="balance">1000</span> монет</div>
+
+    <div class="controls">
+      <label for="stake">Ставка:</label>
+      <select id="stake">
+        <option value="10">10</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+      </select>
+
+      <label for="lines">Линий:</label>
+      <select id="lines">
+        <option value="1">1</option>
+        <option value="3">3</option>
+      </select>
+
+      <label for="risk">Риск:</label>
+      <select id="risk">
+        <option value="low">Низкий</option>
+        <option value="medium" selected>Средний</option>
+        <option value="high">Высокий</option>
+      </select>
+    </div>
+
+    <div class="slot-container">
+      <div class="reel" id="reel1"></div>
+      <div class="reel" id="reel2"></div>
+      <div class="reel" id="reel3"></div>
+    </div>
+
+    <button id="spin-btn">Крутить</button>
+    <button id="auto-btn">Автоигра (10)</button>
+    <button id="topup-btn">Пополнить +500</button>
+
+    <div id="result"></div>
+
+    <h2>📜 История игр</h2>
+    <ul id="history"></ul>
+  </div>
+
+  <audio id="win-sound" src="https://freesound.org/data/previews/341/341695_6262515-lq.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
